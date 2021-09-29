@@ -1,8 +1,9 @@
 
 def factorial(num):
-    reduce(lambda a, b : x)
+    prod = num
+    for i in reversed(range(1, num + 1)):
+        print(f'{prod} TIMES {i} EQUALS {prod * i}')
+        prod *= i
+    return prod
 
-def multi_two(a, b):
-    return a * b
-
-factorial(10)
+print(factorial(10))
